@@ -14,4 +14,5 @@ cmake编译产生的额外的文件
 2. 在命令行执行：proc xxx.proto --cpp_out=./   // 生成对应的C++接口文件
 3. callee，rpc服务发布，完成的工作是（friendservice和userservice完成一样的工作，只不过是不同的服务）：
   1. rpc框架和zookeeper的初始化操作，就是读取配置文件的ip和端口号，加载给他们
-  2. 定义一个rpc服务发布对象，同时调用该对象的NotifyService
+  2. 定义一个rpc服务发布对象，同时调用该对象的NotifyService，NotifyService由rpc方法发布类中实现，其功能是注册rpc方法
+  3. 
